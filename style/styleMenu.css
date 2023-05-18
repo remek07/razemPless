@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+/* ----- MENU -----------*/
+nav.topMenu{
+    width: 100%;
+    height: 8vh;
+    box-shadow: 2px 0px 10px 1px rgba(0, 0,0, 0.3);
+}
+nav.topMenu .contentTopMenu{
+    max-width: 1200px;
+    height: 8vh;
+    margin: 0px auto;
+}
+nav.topMenu .contentTopMenu .left{
+    width: 30%;
+    height: 8vh;
+    float: left;
+}
+nav.topMenu .contentTopMenu .left img{
+    height: 7vh;
+}
+nav.topMenu .contentTopMenu .right{
+    width: 70%;
+    float: left;
+    height: 8vh;
+}
+nav.topMenu .contentTopMenu .right ul{
+    width: 100%;
+    height: 8vh;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.topMenu .contentTopMenu .right ul li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0.8;
+    border-radius: 100%;
+    transition: 0.6s;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    background: linear-gradient(90deg, rgba(43,165,54,1) 11%, rgba(32,126,194,1) 80%)
+}
+nav.topMenu .contentTopMenu .right ul li:hover::after{
+    transform: scaleX(1);
+    -webkit-transform: scale(1);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+}
+nav.topMenu .contentTopMenu .right ul li a{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
